@@ -1,64 +1,220 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portafolio Personal</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="portafolio/estilosportafolio.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento Completo de HTML y CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+      background-color: #fafafa;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      overflow-x: auto;
+    }
+    .demo {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #fff;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .info {
+      background-color: #e7f3fe;
+      border-left: 6px solid #2196F3;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Documento Completo de HTML y CSS</h1>
+  <p>En este documento se explican los elementos básicos de HTML y CSS, incluyendo ejemplos de listas, formularios y tablas. Cada sección muestra el código y cómo se ve en la página.</p>
+
+  <!-- Sección: Estructura Básica de HTML -->
+  <div class="section">
+    <h2>1. Estructura Básica de HTML</h2>
+    <div class="info">
+      <p><strong>&lt;html&gt;:</strong> Es el contenedor raíz de todo el documento.</p>
+      <p><strong>&lt;head&gt;:</strong> Contiene metadatos (información sobre el documento) como el título y enlaces a archivos CSS o scripts.</p>
+      <p><strong>&lt;title&gt;:</strong> Define el título que aparece en la pestaña del navegador.</p>
+      <p><strong>&lt;body&gt;:</strong> Contiene el contenido visible, como encabezados, párrafos, imágenes, etc.</p>
+      <p><strong>&lt;h1&gt;:</strong> Representa el encabezado principal, que generalmente se muestra con un tamaño de fuente grande y en negrita.</p>
+      <p><strong>&lt;p&gt;:</strong> Define un párrafo de texto.</p>
+    </div>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Título de la Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Encabezado Principal&lt;/h1&gt;
+    &lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    <h3>Visualización:</h3>
+    <div class="demo">
+      <h1>Encabezado Principal</h1>
+      <p>Este es un párrafo de ejemplo.</p>
+    </div>
+  </div>
+
+  <!-- Sección: Listas -->
+  <div class="section">
+    <h2>2. Listas</h2>
+    <p>HTML permite crear listas ordenadas y no ordenadas para organizar información.</p>
     
-    </head>
+    <h3>Lista No Ordenada (<code>&lt;ul&gt;</code>)</h3>
+    <pre>
+&lt;ul&gt;
+  &lt;li&gt;Elemento 1&lt;/li&gt;
+  &lt;li&gt;Elemento 2&lt;/li&gt;
+  &lt;li&gt;Elemento 3&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+    <h4>Visualización:</h4>
+    <div class="demo">
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+    </div>
     
+    <h3>Lista Ordenada (<code>&lt;ol&gt;</code>)</h3>
+    <pre>
+&lt;ol&gt;
+  &lt;li&gt;Primer elemento&lt;/li&gt;
+  &lt;li&gt;Segundo elemento&lt;/li&gt;
+  &lt;li&gt;Tercer elemento&lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
+    <h4>Visualización:</h4>
+    <div class="demo">
+      <ol>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+      </ol>
+    </div>
+  </div>
 
-    <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <header>
-            <h1 class="exo-2">Mi Portafolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about" class="exo-2">sobre mi</a></li>
-                    <li><a href="#portfolio" class="exo-2">Portafolio</a></li>
-                    <li><a href="#contact" class="exo-2">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section id="#about" class="exo-2">
-            <h2>Sobre Mí</h2>
-            <p>Hola, soy Alfonso Daniel Sanchez, un desarrollador web apasionado por crear soluciones innovadoras.</p>
-        </section>
+  <!-- Sección: Formularios -->
+  <div class="section">
+    <h2>3. Formularios</h2>
+    <p>Los formularios permiten a los usuarios ingresar datos que pueden ser enviados y procesados en el servidor.</p>
+    <pre>
+&lt;form action="/submit"&gt;
+  &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+  &lt;input type="text" id="nombre" name="nombre"&gt;
+  &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
+    </pre>
+    <h3>Visualización:</h3>
+    <div class="demo">
+      <!-- Usamos onsubmit para evitar la recarga de la página -->
+      <form action="/submit" onsubmit="alert('Formulario enviado'); return false;">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
 
-        <section id="portfolio" class="exo-2">
-            <h2>Portafolio</h2>
-            <div class="gallery">
-                <div class="project">
-                    <a href="cartarestaurante/cartaindex.html" target="_blank"><img src="portafolio/imagenes/Captura de pantalla 2024-10-07 152053.png" alt="Proyecto 1"></a>     <!-- agregar la foto -->
-                    <p> En este proyecto se presento una pequeña propuesta para la una carta de un restaurante</p>
-                </div>
+  <!-- Sección: Tablas -->
+  <div class="section">
+    <h2>4. Tablas</h2>
+    <p>Las tablas se utilizan para organizar datos en filas y columnas.</p>
+    <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nombre&lt;/th&gt;
+    &lt;th&gt;Edad&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ana&lt;/td&gt;
+    &lt;td&gt;23&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Juan&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+    <h3>Visualización:</h3>
+    <div class="demo">
+      <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+        </tr>
+        <tr>
+          <td>Ana</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>Juan</td>
+          <td>30</td>
+        </tr>
+      </table>
+    </div>
+  </div>
 
-                <div class="project" class="exo-2">
-                    <a href="pruebatalentotech.html" target="_blank"><img src="portafolio/imagenes/Captura de pantalla 2024-10-07 160317.png" alt="Proyecto 2"> </a>    <!-- agregar la foto -->
-                    <p> en este proyecto se recreo de cierta manera la pagina de talentotech oriente y colocando diferentes tipos de adaptabilidad para poder verse de una manera correcta en cualquier tipo de dispositivo</p>
-                </div>
-            </div>
-        </section>
+  <!-- Sección: CSS Básico -->
+  <div class="section">
+    <h2>5. CSS Básico</h2>
+    <p>CSS (Cascading Style Sheets) se utiliza para dar estilo a los elementos HTML. A continuación se muestra un ejemplo de CSS interno.</p>
+    <pre>
+&lt;style&gt;
+  body {
+    background-color: lightgray;
+  }
+  h1 {
+    color: blue;
+  }
+&lt;/style&gt;
+    </pre>
+    <h3>Visualización:</h3>
+    <div class="demo" style="background-color: lightgray; padding: 20px;">
+      <h1 style="color: blue;">Encabezado con CSS</h1>
+      <p>El fondo de esta sección es gris claro y el encabezado es azul.</p>
+    </div>
+  </div>
+  
+  <!-- Sección: Resumen de Elementos HTML Básicos -->
+  <div class="section">
+    <h2>6. Resumen de Elementos HTML Básicos</h2>
+    <div class="info">
+      <p><strong>&lt;html&gt;:</strong> Contenedor raíz de todo el documento.</p>
+      <p><strong>&lt;head&gt;:</strong> Contiene metadatos y enlaces a recursos externos (CSS, scripts, etc.).</p>
+      <p><strong>&lt;title&gt;:</strong> Define el título de la página (lo que se muestra en la pestaña del navegador).</p>
+      <p><strong>&lt;body&gt;:</strong> Contiene el contenido visible de la página (textos, imágenes, formularios, tablas, etc.).</p>
+      <p><strong>&lt;h1&gt;:</strong> Encabezado principal, generalmente se muestra con una fuente grande y en negrita.</p>
+      <p><strong>&lt;p&gt;:</strong> Párrafo de texto.</p>
+      <p><strong>&lt;ul&gt; y &lt;ol&gt;:</strong> Listas no ordenadas y ordenadas, respectivamente.</p>
+      <p><strong>&lt;li&gt;:</strong> Elemento de una lista.</p>
+      <p><strong>&lt;form&gt;:</strong> Define un formulario.</p>
+      <p><strong>&lt;label&gt;:</strong> Etiqueta descriptiva para un campo del formulario.</p>
+      <p><strong>&lt;input&gt;:</strong> Campo de entrada (por ejemplo, de texto, botón de envío, etc.).</p>
+      <p><strong>&lt;table&gt;:</strong> Define una tabla.</p>
+      <p><strong>&lt;tr&gt;:</strong> Define una fila en una tabla.</p>
+      <p><strong>&lt;th&gt;:</strong> Define una celda de encabezado en una tabla.</p>
+      <p><strong>&lt;td&gt;:</strong> Define una celda de datos en una tabla.</p>
+    </div>
+    <p>Con estos elementos básicos puedes construir y estructurar cualquier página web, aplicando estilos con CSS para mejorar su apariencia.</p>
+  </div>
 
-        <section id="contact" class="exo-2">
-            <h2>Contacto</h2>
-            <form action="submit.php" method="post">
-              <label for="name">Nombre:</label>
-              <input type="text" id="name" name="name" required><br>
-              <label for="email">Correo Electrónico:</label>
-              <input type="email" id="email" name="email" required><br>
-              <label for="message">Mensaje:</label>
-              <textarea id="message" name="message" required></textarea><br>
-              <input type="submit" value="Enviar" class="boton">
-            </form>
-          </section>
-          
-
-    </body>
-    
+</body>
 </html>
